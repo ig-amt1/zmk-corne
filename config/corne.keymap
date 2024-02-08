@@ -1,7 +1,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#include "boards/shields/corne/keys_br_abnt2.h"
+#include <boards/shields/corne/keys_br_abnt2.h>
 
 #define BASE 0
 #define NUM  1
