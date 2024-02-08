@@ -1,9 +1,9 @@
 layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
 layers:
-  default: ['$$mdi:keyboard-tab$$', Q, W, E, R, T, Y, U, I, O, P, '$$mdi:backspace-outline$$', '$$mdi:apple-keyboard-control$$', A, S, D, F, G, H, J, K, L, ;, '''',
-    '$$mdi:apple-keyboard-shift$$', Z, X, C, V, B, N, M, ',', ., /, ESC, '$$mdi:microsoft-windows$$', lower, '$$mdi:keyboard-space$$', '$$mdi:keyboard-return$$',
-    raise, RALT]
-  lower:
+  base: ['$$mdi:keyboard-tab$$', Q, W, E, R, T, Y, U, I, O, P, '$$mdi:backspace-outline$$', '$$mdi:apple-keyboard-control$$', A, S, D, F, G, H, J, K, L, ;, '''',
+    '$$mdi:apple-keyboard-shift$$', Z, X, C, V, B, N, M, ',', ., /, ESC, '$$mdi:microsoft-windows$$', number, '$$mdi:keyboard-space$$', '$$mdi:keyboard-return$$',
+    symbol, RALT]
+  number:
   - $$mdi:keyboard-tab$$
   - '1'
   - '2'
@@ -46,7 +46,7 @@ layers:
   - $$mdi:keyboard-return$$
   - {t: '$$mdi:chevron-down$$', type: trans}
   - RALT
-  raise:
+  symbol:
   - $$mdi:keyboard-tab$$
   - '!'
   - '@'
@@ -89,3 +89,206 @@ layers:
   - $$mdi:keyboard-return$$
   - {type: held}
   - RALT
+  function:
+  - $$mdi:keyboard-tab$$
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - ^
+  - '&'
+  - KP MULTIPLY
+  - (
+  - )
+  - $$mdi:backspace-outline$$
+  - $$mdi:apple-keyboard-control$$
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - '-'
+  - '='
+  - '['
+  - ']'
+  - \
+  - '`'
+  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - _
+  - +
+  - '{'
+  - '}'
+  - '|'
+  - '~'
+  - $$mdi:microsoft-windows$$
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - $$mdi:keyboard-space$$
+  - $$mdi:keyboard-return$$
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - RALT
+  game:
+  - $$mdi:keyboard-tab$$
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - ^
+  - '&'
+  - KP MULTIPLY
+  - (
+  - )
+  - $$mdi:backspace-outline$$
+  - $$mdi:apple-keyboard-control$$
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - '-'
+  - '='
+  - '['
+  - ']'
+  - \
+  - '`'
+  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - _
+  - +
+  - '{'
+  - '}'
+  - '|'
+  - '~'
+  - $$mdi:microsoft-windows$$
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - $$mdi:keyboard-space$$
+  - $$mdi:keyboard-return$$
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - RALT
+  nav:
+  - $$mdi:keyboard-tab$$
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - ^
+  - '&'
+  - KP MULTIPLY
+  - (
+  - )
+  - $$mdi:backspace-outline$$
+  - $$mdi:apple-keyboard-control$$
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - '-'
+  - '='
+  - '['
+  - ']'
+  - \
+  - '`'
+  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - _
+  - +
+  - '{'
+  - '}'
+  - '|'
+  - '~'
+  - $$mdi:microsoft-windows$$
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - $$mdi:keyboard-space$$
+  - $$mdi:keyboard-return$$
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - RALT
+  fgame:
+  - $$mdi:keyboard-tab$$
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - ^
+  - '&'
+  - KP MULTIPLY
+  - (
+  - )
+  - $$mdi:backspace-outline$$
+  - $$mdi:apple-keyboard-control$$
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - '-'
+  - '='
+  - '['
+  - ']'
+  - \
+  - '`'
+  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - _
+  - +
+  - '{'
+  - '}'
+  - '|'
+  - '~'
+  - $$mdi:microsoft-windows$$
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - $$mdi:keyboard-space$$
+  - $$mdi:keyboard-return$$
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - RALT
+combos:
+- p: [16, 15, 38]
+  k: {t: game, h: '$$mdi:toggle-switch$$'}
+  l: [base]
+- p: [1, 2, 3, 4]
+  k: '&close'
+  l: [base]
+- p: [5, 6]
+  k: PRINTSCREEN
+  l: [base]
+- p: [28, 27, 26]
+  k: '&caps_word'
+  l: [base]
+- p: [16, 15, 14]
+  k: ESC
+  l: [base]
+- p: [10, 11]
+  k: $$mdi:backspace-reverse-outline$$
+  l: [base]
+- p: [34, 32, 33]
+  k: '?'
+  l: [base]
+- p: [12, 13]
+  k: LEFT GUI
+  l: [base]
+- p: [22, 23]
+  k: RIGHT GUI
+  l: [base]
+- p: [8, 9, 10]
+  k: '&lock'
+  l: [nav]
