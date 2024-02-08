@@ -68,7 +68,7 @@ layers:
   - U
   - ''''
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - '&KP'
+  - {t: '$$mdi:chevron-down$$', type: trans}
   - Z
   - X
   - C
