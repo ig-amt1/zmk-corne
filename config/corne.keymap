@@ -35,7 +35,7 @@
 
 
 
-
+/ {
     macros {
         close: close {
             compatible = "zmk,behavior-macro";
@@ -103,7 +103,7 @@
             label = "GUI_UP";
         };
     };
-
+};
 / {
     keymap {
         compatible = "zmk,keymap";
