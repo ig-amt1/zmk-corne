@@ -7,29 +7,10 @@
 #define NUM  1
 #define SYM  2
 #define FUN  3
-#define gam  4
+#define GAM  4
 #define NAV  5
 #define FGM  6
 
-AC_KEY(A_acute, BR_A, BR_ACUT)
-AC_KEY(A_grave, BR_A, BR_GRAVE)
-AC_KEY(A_tilde, BR_A, BR_TILDE)
-AC_KEY(A_circ,  BR_A, BR_CIRC)
-
-AC_KEY(E_acute, BR_E, BR_ACUT)
-AC_KEY(E_circ,  BR_E, BR_CIRC)
-
-AC_KEY(I_acute, BR_I, BR_ACUT)
-
-AC_KEY(O_acute, BR_O, BR_ACUT)
-AC_KEY(O_tilde, BR_O, BR_TILDE)
-AC_KEY(O_circ,  BR_O, BR_CIRC)
-
-AC_KEY(U_acute, BR_U, BR_ACUT)
-
-UNDEAD_KEY(tilde, BR_TILDE)
-UNDEAD_KEY(caret, BR_CIRC)
-UNDEAD_KEY(grave, BR_GRAVE)
 
 &lt {
     tapping-term-ms = <TAPPING_TERM>;
@@ -138,17 +119,6 @@ UNDEAD_KEY(grave, BR_GRAVE)
                 <&kp LALT>;
         };
 
-        cao: cao {
-            compatible = "zmk,behavior-macro";
-            label = "CAO";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_tap>,
-                <&kp BR_CCED>,
-                <&macro_tap_time 20>,
-                <&A_tilde>;
-        };
-
         guileft: guileft {
             compatible = "zmk,behavior-macro";
             label = "GUILEFT";
@@ -208,77 +178,47 @@ UNDEAD_KEY(grave, BR_GRAVE)
                 compatible = "zmk,keymap";
 
               base_layer {
-            bindings = <
-   &kp TAB   &kp BR_Q  &kp BR_W       &kp BR_E        &kp BR_R        &kp BR_T     &kp BR_Y     &kp BR_U        &kp BR_I        &kp BR_O       &kp BR_P    &kp BSPC
-   &kp LCTRL  &kp BR_A  &hm LALT BR_S  &hm LSHFT BR_D  &hm LCTRL BR_F  &kp BR_G     &kp BR_H     &hm RCTRL BR_J  &hm RSHFT BR_K  &hm RALT BR_L  &kp BR_SEMI &kp SQT
-   &kp LSHFT  &kp BR_Z  &kp BR_X       &kp BR_C        &kp BR_V        &kp BR_B     &kp BR_N     &kp BR_M        &kp BR_COMMA    &kp BR_DOT     &kp BR_SLASH  &kp ESC
-                 &none           &lt 3 TAB       &lt 1 SPACE  &lt 2 ENTER  &lt 5 BSPC      &none
+// -----------------------------------------------------------------------------------------
+// |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
+// | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
+// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
+//                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
+                        bindings = <
+   &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
+   &kp LCTRL &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
+   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
+                  &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &kp RALT
                         >;
                 };
-               number_layer {
-            bindings = <
-   &kp TAB    &kp BR_DQT    &kp BR_EXCL  &kp BR_AT     &kp BR_HASH  &kp BR_DLLR  &kp BR_PLUS   &kp BR_N7  &kp BR_N8  &kp BR_N9  &kp BR_BSLH &kp BSPC
-   &kp LCTRL  &kp BR_PRCNT  &kp BR_AMPS  &kp BR_ASTRK  &kp BR_LPAR  &kp BR_RPAR  &kp BR_MINUS  &kp BR_N4  &kp BR_N5  &kp BR_N6  &kp BR_COMMA &trans
-   &kp LSHFT  &kp BR_UNDER  &kp BR_LBRC  &kp BR_RBRC   &kp BR_LT    &kp BR_GT    &kp BR_COLON  &kp BR_N1  &kp BR_N2  &kp BR_N3  &kp BR_EQUAL  &trans
-                                     &none         &none        &none        &kp BR_ASTRK  &kp BR_N0  &none
+                number_layer {
+// -----------------------------------------------------------------------------------------
+// |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
+// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
+// | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
+//                    | GUI |     | SPC |   | ENT |     | ALT |
+                        bindings = <
+   &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
+   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
+   &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
+                                    &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
                         >;
                 };
 
-                symbol_layer {
-            bindings = <
-&kp TAB &kp BR_ASTRK  &kp BR_AMPS   &kp BR_LBRC  &kp BR_RBRC  &kp BR_HASH  &caret    &U_acute  &A_tilde  &O_tilde  &kp BR_CCED &kp BSPC
-&kp LCTRL &kp BR_SEMI   &kp BR_AT     &kp BR_LPAR  &kp BR_RPAR  &kp BR_DQT   &grave    &I_acute  &A_acute  &O_acute  &E_acute  &none
-&kp LSHFT &kp BR_EXCL   &kp BR_PRCNT  &kp BR_LBKT  &kp BR_RBKT  &kp BR_PIPE  &A_grave  &E_circ   &A_circ   &O_circ   &tilde       &none
-                                   &none        &kp BR_DLLR  &cao         &none     &none     &none
+               symbol_layer  {
+// -----------------------------------------------------------------------------------------
+// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
+// | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
+// | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
+//                    | GUI |     | SPC |   | ENT |     | ALT |
+                        bindings = <
+   &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
+   &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
+   &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
+                             &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
                         >;
                 };
-
- function_layer {
-            bindings = <
-&kp TAB &none       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none  &none  &kp F1  &kp F2   &kp F3   &kp F4 &kp BSPC
-&kp LCTRL &none       &none         &out OUT_TOG  &none         &none  &none  &kp F5  &kp F6   &kp F7   &kp F8  &none
-&none  &bt BT_CLR  &none         &none         &none         &none  &none  &kp F9  &kp F10  &kp F11  &kp F12  &none
-                                 &none         &none         &none  &none  &none   &none
-            >;
         };
- game_layer {
-            bindings = <
-&kp TAB  &kp TAB    &kp BR_Q  &kp BR_W  &kp BR_E   &kp BR_R   &kp C_VOL_UP  &kp BR_Y  &kp BR_N      &kp BR_V    &tog 4  &kp BSPC
-&kp LCTRL   &kp LSHFT  &kp BR_A  &kp BR_S  &kp BR_D   &kp BR_F   &kp C_VOL_DN  &kp BR_T  &kp BR_M      &kp BR_I    &kp C_MUTE &none
-&none  &kp LCTRL  &kp BR_Z  &kp BR_X  &kp BR_C   &kp BR_B   &kp BR_N      &kp BR_M  &kp BR_COMMA  &kp BR_DOT  &kp LGUI    &none
-                            &none     &lt 6 ESC  &kp SPACE  &none         &none     &none
-            >;
-        };
-
- fgame_layer {
-            bindings = <
-&kp TAB  &kp BR_N1  &kp BR_N2  &kp BR_N3  &kp BR_N4  &kp BR_N5  &kp C_VOL_UP  &kp BR_Y  &kp BR_N      &kp BR_V    &kp CAPS &kp BSPC
-&kp LCTRL  &kp F6     &kp BR_B   &kp BR_M   &kp BR_T   &kp BR_G   &kp C_VOL_DN  &kp BR_T  &kp BR_M      &kp BR_I    &none &none
-&none  &kp F1     &kp F2     &kp F3     &kp F4     &kp F5     &kp BR_N      &kp BR_M  &kp BR_COMMA  &kp BR_DOT  &kp LGUI  &none
-                             &none      &none      &none      &none         &none     &none
-            >;
-        };
-
-   nav_layer {
-            bindings = <
-&kp TAB  &kp PG_UP  &kp HOME  &none  &none  &none  &kp C_VOLUME_UP    &none     &kp UP    &none      &kp CAPS  &kp BSPC
-&kp LCTRL  &kp PG_DN  &kp END   &none  &none  &none  &kp C_VOLUME_DOWN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp DEL &none
-&none  &none      &none     &none  &none  &none  &kp C_MUTE         &guileft  &gui_up   &guiright  &none     &none
-                            &none  &none  &none  &none  &none     &none
-            >;
-        };
-
-
-
-
-
-
-
-
-
-
-
-
+};
 
 
 
