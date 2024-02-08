@@ -126,7 +126,7 @@
             bindings = <
 &kp TAB      &kp Q  &kp W  &kp K    &kp S      &kp F          &kp O      &kp I     &kp L     &kp SEMI  &kp R     &trans
 &mt LSHFT F &kp A  &kp D  &kp V    &kp E      &kp G          &kp M      &kp Y     &kp N     &kp U     &kp SQT   &trans
-&KP       &kp Z  &kp X  &kp C    &kp B      &kp T          &kp J      &kp H     &kp CMMA  &kp DOT   &kp FSLH  &trans
+&trans   &kp Z  &kp X  &kp C    &kp B      &kp T          &kp J      &kp H     &kp CMMA  &kp DOT   &kp FSLH  &trans
                       &kp ESC  &kp SPACE  &kp TAB        &kp ENTER  &kp BSPC  &kp DEL
             >;
         };
