@@ -12,10 +12,10 @@
 #define NAV  5
 #define FGM  6
 
-&lt {
-    tapping-term-ms = <TAPPING_TERM>;
-    flavor = "balanced";
-};
+//&lt {
+//    tapping-term-ms = <TAPPING_TERM>;
+//    flavor = "balanced";
+// };
 
 / {
     behaviors {
@@ -31,13 +31,6 @@
 
     combos {
         compatible = "zmk,combos";
-
-        // combo_esc {
-        //timeout-ms = <50>;
-        //key-positions = <13 16>;
-        //  bindings = <&caps_word>;
-        //  };
-
         game {
             timeout-ms = <50>;
             bindings = <&tog 4>;
