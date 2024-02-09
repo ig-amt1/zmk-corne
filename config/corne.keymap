@@ -113,7 +113,8 @@
 
         game {
             bindings = <&tog 5>;
-            key-positions = <16 15 38>;
+            key-positions = <11 23 35>;
+            layers = <0>;
         };
     };
 
