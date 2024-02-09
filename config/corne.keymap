@@ -108,7 +108,8 @@
 
         funcion {
             bindings = <&mo 4>;
-            key-positions = <14 15>;
+            key-positions = <15 16>;
+            layers = <0>;
         };
 
         game {
