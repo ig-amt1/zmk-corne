@@ -187,9 +187,9 @@ layers:
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - {type: held}
-  - {type: held}
   - {t: '$$mdi:chevron-down$$', type: trans}
+  - {type: held}
+  - {type: held}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - F5
@@ -345,8 +345,9 @@ layers:
   - {type: held}
   - {t: '$$mdi:chevron-down$$', type: trans}
 combos:
-- p: [14, 15]
+- p: [15, 16]
   k: function
+  l: [base]
 - p: [11, 23, 35]
   k: {t: game, h: '$$mdi:toggle-switch$$'}
   l: [base]
