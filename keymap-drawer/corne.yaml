@@ -347,5 +347,6 @@ layers:
 combos:
 - p: [14, 15]
   k: function
-- p: [16, 15, 38]
+- p: [11, 23, 35]
   k: {t: game, h: '$$mdi:toggle-switch$$'}
+  l: [base]
