@@ -13,7 +13,7 @@ layers:
   - O
   - P
   - $$mdi:backspace-reverse-outline$$
-  - {t: CLCK, h: '$$mdi:apple-keyboard-shift$$'}
+  - LS(CLCK)
   - A
   - S
   - D
@@ -25,7 +25,7 @@ layers:
   - L
   - ;
   - ''''
-  - {t: ESCAPE, h: '$$mdi:apple-keyboard-control$$'}
+  - LC(ESCAPE)
   - Z
   - X
   - C
@@ -216,7 +216,7 @@ layers:
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   game:
-  - {t: ESCAPE, h: '$$mdi:keyboard-tab$$'}
+  - $$mdi:keyboard-tab$$
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
@@ -252,8 +252,8 @@ layers:
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: base, h: '$$mdi:toggle-switch$$'}
-  - {t: M, h: LEFT ALT}
-  - LEFT ALT
+  - LA(M)
+  - {t: ESCAPE, h: fgame}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - RIGHT WIN
@@ -339,7 +339,7 @@ layers:
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: base, h: '$$mdi:toggle-switch$$'}
   - J
-  - I
+  - {t: I, type: held}
   - M
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
