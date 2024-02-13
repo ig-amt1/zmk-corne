@@ -1,9 +1,7 @@
 #include "accents.dtsi"
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
 
 // Layer Definitions
 
@@ -145,10 +143,10 @@
 
         symbol_layer {
             bindings = <
-&trans  &kp EXCL      &kp AT      &kp HASH    &kp DLLR      &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp DEL
-&trans  &bt BT_CLR    &bt BT_PRV  &bt BT_NXT  &trans        &to 3        &kp UNDER  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
-&trans  &out OUT_TOG  &trans      &trans      &trans        &trans       &kp MINUS  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
-                                  &kp LGUI    &kp LEFT_ALT  &kp SPACE    &kp RET    &trans     &kp RALT
+&trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR      &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp DEL
+&trans  &trans    &trans  &trans    &trans        &to 3        &kp UNDER  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
+&trans  &trans    &trans  &trans    &trans        &trans       &kp MINUS  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
+                          &kp LGUI  &kp LEFT_ALT  &kp SPACE    &kp RET    &trans     &kp RALT
             >;
         };
 
