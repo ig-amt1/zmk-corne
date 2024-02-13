@@ -174,11 +174,11 @@ layers:
   - $$mdi:backspace-reverse-outline$$
   function:
   - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:backup-restore$$', type: bootloader}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:bluetooth-connect$$', h: '0', type: text_with_symbol}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - F1
   - F2
@@ -186,11 +186,11 @@ layers:
   - F4
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:progress-download$$', type: bootloader}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {type: held}
   - {type: held}
-  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:bluetooth-connect$$', h: '1', type: text_with_symbol}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - F5
   - F6
@@ -198,11 +198,11 @@ layers:
   - F8
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:bluetooth$$', h: '$$mdi:close-thick$$', type: text_with_symbol}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:bluetooth-connect$$', h: '2', type: text_with_symbol}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - F9
   - F10
