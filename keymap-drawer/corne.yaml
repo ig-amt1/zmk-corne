@@ -88,6 +88,18 @@ layers:
   - RALT
   symbol:
   - {t: '$$mdi:chevron-down$$', type: trans}
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
   - '!'
   - '@'
   - '#'
@@ -95,39 +107,27 @@ layers:
   - '%'
   - ^
   - '&'
-  - KP MULTIPLY
+  - '*'
   - (
   - )
-  - $$mdi:backspace-reverse-outline$$
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: accent, h: '$$mdi:toggle-switch$$'}
-  - _
-  - '='
-  - '['
-  - ']'
-  - \
-  - '`'
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - '-'
-  - +
-  - '{'
-  - '}'
-  - '|'
-  - '~'
-  - $$mdi:microsoft-windows$$
+  - F10
   - LEFT ALT
+  - \
+  - '|'
+  - <
+  - '>'
+  - +
+  - KP DIVIDE
+  - KP ASTERISK
+  - KP EQUAL
+  - KP PLUS
+  - KP MINUS
+  - F20
+  - $$mdi:microsoft-windows$$
+  - {t: '$$mdi:chevron-down$$', type: trans}
   - $$mdi:keyboard-space$$
   - $$mdi:keyboard-return$$
-  - {type: held}
+  - {t: '$$mdi:apple-keyboard-control$$', type: held}
   - RALT
   accent:
   - {t: '$$mdi:chevron-down$$', type: trans}
@@ -233,7 +233,7 @@ layers:
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: function, h: '$$mdi:circle-small$$'}
+  - F5
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
@@ -308,13 +308,13 @@ layers:
   - '3'
   - '4'
   - '5'
-  - LC(RA(Y))
-  - LC(RA(U))
-  - LC(RA(I))
-  - LC(RA(H))
-  - LC(RA(J))
-  - LC(RA(DEL))
-  - {t: accent, h: '$$mdi:toggle-switch$$'}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - L
   - L
   - O
   - Y
