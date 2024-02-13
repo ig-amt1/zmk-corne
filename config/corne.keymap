@@ -155,7 +155,7 @@
         accent_layer {
             bindings = <
 &trans  &none      &none    &kp HASH  &kp CARET  &none        &none      &ac_otil  &ac_oacu  &ac_uacu  &none     &trans
-&trans  &kp GRAVE  &kp DQT  &kp SQT   &kp Z      &kp TILDE    &ac_agrv   &ac_atil  &ac_aacu  &ac_eacu  &ac_iacu  &trans
+&trans  &kp GRAVE  &kp DQT  &kp SQT   &kp EXCL   &kp TILDE    &ac_agrv   &ac_atil  &ac_aacu  &ac_eacu  &ac_iacu  &trans
 &trans  &none      &none    &ac_ccdi  &none      &none        &none      &ac_acir  &ac_ocir  &ac_ecir  &none     &trans
                             &trans    &trans     &trans       &kp ENTER  &kp BSPC  &kp DEL
             >;
