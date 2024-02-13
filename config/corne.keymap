@@ -143,10 +143,10 @@
 
         symbol_layer {
             bindings = <
-&trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR      &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp DEL
-&trans  &trans    &trans  &trans    &trans        &to 3        &kp UNDER  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
-&trans  &trans    &trans  &trans    &trans        &trans       &kp MINUS  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
-                          &kp LGUI  &kp LEFT_ALT  &kp SPACE    &kp RET    &trans     &kp RALT
+&trans        &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3   &kp NUMBER_4      &kp N5         &kp NUMBER_6   &kp N7           &kp N8        &kp N9                &kp N0                 &trans
+&trans        &kp EXCL       &kp AT_SIGN   &kp HASH       &kp DOLLAR        &kp PERCENT    &kp CARET      &kp AMPERSAND    &kp ASTRK     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp F10
+&kp LEFT_ALT  &kp BACKSLASH  &kp PIPE      &kp LESS_THAN  &kp GREATER_THAN  &kp PLUS       &kp KP_DIVIDE  &kp KP_ASTERISK  &kp KP_EQUAL  &kp KP_PLUS           &kp KP_MINUS           &kp F20
+                                           &kp LGUI       &trans            &kp SPACE      &kp RET        &kp RCTRL        &kp RALT
             >;
         };
 
@@ -171,7 +171,7 @@
         game_layer {
             bindings = <
 &kp TAB         &trans  &trans  &trans     &trans        &trans    &trans  &trans         &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &trans  &trans  &trans     &trans        &sl 4     &trans  &trans         &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &trans  &trans  &trans     &trans        &kp F5    &trans  &trans         &trans  &trans  &trans  &trans
 &kp LCTRL       &trans  &trans  &trans     &trans        &trans    &trans  &trans         &trans  &trans  &trans  &to 0
                                 &kp LA(M)  &lt 7 ESCAPE  &trans    &trans  &kp RIGHT_WIN  &trans
             >;
@@ -188,8 +188,8 @@
 
         fgame_layer {
             bindings = <
-&kt F5   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp LC(RA(Y))  &kp LC(RA(U))  &kp LC(RA(I))  &kp LC(RA(H))  &kp LC(RA(J))  &kp LC(RA(DEL))
-&to 3    &kp L         &kp O         &kp Y         &kp K         &kp G           &trans         &trans         &trans         &trans         &trans         &kp LA(F4)
+&kt F5   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5     &trans         &trans         &trans         &trans         &trans    &trans  
+&kp L    &kp L         &kp O         &kp Y         &kp K         &kp G           &trans         &trans         &trans         &trans         &trans         &kp LA(F4)
 &kp F10  &none         &to 0         &none         &kp NUMBER_6  &kp NUMBER_7    &trans         &trans         &trans         &trans         &trans         &to 0
                                      &kp J         &kp I         &kp M           &trans         &trans         &trans
             >;
