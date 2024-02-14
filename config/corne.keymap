@@ -152,21 +152,11 @@
 
         accent_layer {
          bindings = <
-&trans        &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3   &kp NUMBER_4      &kp N5         &kp NUMBER_6   &kp N7           &kp N8        &kp N9                &kp N0                 &trans
-&trans        &kp EXCL       &kp AT_SIGN   &kp HASH       &kp DOLLAR        &kp PERCENT    &kp CARET      &kp AMPERSAND    &kp ASTRK     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp F10
-&kp LEFT_ALT  &kp BACKSLASH  &kp PIPE      &kp LESS_THAN  &kp GREATER_THAN  &kp PLUS       &kp KP_DIVIDE  &kp KP_ASTERISK  &kp KP_EQUAL  &kp KP_PLUS           &kp KP_MINUS           &kp F20
-                                           &kp LGUI       &trans            &kp SPACE      &kp RET        &kp RCTRL        &kp RALT
 
-
-
-
-
-
-
-//&trans  &none      &none    &kp HASH  &kp CARET  &none        &none      &ac_otil  &ac_oacu  &ac_uacu  &none     &trans
-//&trans  &kp GRAVE  &kp DQT  &kp SQT   &kp EXCL   &kp TILDE    &ac_agrv   &ac_atil  &ac_aacu  &ac_eacu  &ac_iacu  &trans
-//&trans  &none      &none    &ac_ccdi  &none      &none        &none      &ac_acir  &ac_ocir  &ac_ecir  &none     &trans
-//                            &trans    &trans     &trans       &kp ENTER  &kp BSPC  &kp DEL
+&trans  &none      &none    &kp HASH  &kp CARET  &none        &none      &ac_otil  &ac_oacu  &ac_uacu  &none     &trans
+&trans  &kp GRAVE  &kp DQT  &kp SQT   &kp EXCL   &kp TILDE    &ac_agrv   &ac_atil  &ac_aacu  &ac_eacu  &ac_iacu  &trans
+&trans  &none      &none    &ac_ccdi  &none      &none        &none      &ac_acir  &ac_ocir  &ac_ecir  &none     &trans
+                          &trans    &trans     &trans       &kp ENTER  &kp BSPC  &kp DEL
             >;
         };
 
