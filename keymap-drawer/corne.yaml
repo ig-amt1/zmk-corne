@@ -131,47 +131,47 @@ layers:
   - RALT
   accent:
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - '!'
-  - '@'
+  - ''
+  - ''
   - '#'
-  - $
-  - '%'
   - ^
-  - '&'
-  - '*'
-  - (
-  - )
-  - F10
-  - LEFT ALT
-  - \
-  - '|'
-  - <
-  - '>'
-  - +
-  - KP DIVIDE
-  - KP ASTERISK
-  - KP EQUAL
-  - KP PLUS
-  - KP MINUS
-  - F20
-  - $$mdi:microsoft-windows$$
+  - ''
+  - ''
+  - {t: '&ac_otil_l', s: '&ac_otil_u'}
+  - {t: '&ac_oacu_l', s: '&ac_oacu_u'}
+  - {t: '&ac_uacu_l', s: '&ac_uacu_u'}
+  - ''
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - $$mdi:keyboard-space$$
-  - $$mdi:keyboard-return$$
-  - $$mdi:apple-keyboard-control$$
-  - RALT
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - '`'
+  - '"'
+  - ''''
+  - '!'
+  - '~'
+  - {t: '&ac_agrv_l', s: '&ac_agrv_u'}
+  - {t: '&ac_atil_l', s: '&ac_atil_u'}
+  - {t: '&ac_aacu_l', s: '&ac_aacu_u'}
+  - {t: '&ac_eacu_l', s: '&ac_eacu_u'}
+  - {t: '&ac_iacu_l', s: '&ac_iacu_u'}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - ''
+  - ''
+  - '&ac_ccdi'
+  - ''
+  - ''
+  - ''
+  - {t: '&ac_acir_l', s: '&ac_acir_u'}
+  - {t: '&ac_ocir_l', s: '&ac_ocir_u'}
+  - {t: '&ac_ecir_l', s: '&ac_ecir_u'}
+  - ''
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - ENTER
+  - $$mdi:backspace-outline$$
+  - $$mdi:backspace-reverse-outline$$
   function:
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:backup-restore$$', type: bootloader}
