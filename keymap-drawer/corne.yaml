@@ -1,7 +1,7 @@
 layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
 layers:
   base:
-  - $$mdi:keyboard-tab$$
+  - ESCAPE
   - Q
   - W
   - E
@@ -12,7 +12,7 @@ layers:
   - I
   - O
   - P
-  - $$mdi:backspace-reverse-outline$$
+  - '&caps_word'
   - LS(CLCK)
   - A
   - S
@@ -24,7 +24,7 @@ layers:
   - K
   - L
   - ;
-  - ''''
+  - '?'
   - LC(ESCAPE)
   - Z
   - X
@@ -37,12 +37,12 @@ layers:
   - .
   - /
   - $$mdi:apple-keyboard-shift$$
-  - LEFT ALT
-  - number
+  - {t: '$$mdi:keyboard-tab$$', h: accent}
+  - {t: ESCAPE, h: number}
   - $$mdi:keyboard-space$$
   - $$mdi:keyboard-return$$
   - {t: '$$mdi:backspace-outline$$', h: symbol}
-  - RALT
+  - {t: '$$mdi:backspace-reverse-outline$$', h: nav}
   number:
   - {t: '$$mdi:chevron-down$$', type: trans}
   - '1'
@@ -84,7 +84,7 @@ layers:
   - {type: held}
   - $$mdi:keyboard-space$$
   - $$mdi:keyboard-return$$
-  - $$mdi:apple-keyboard-control$$
+  - {t: '$$mdi:chevron-down$$', type: trans}
   - RALT
   symbol:
   - {t: '$$mdi:chevron-down$$', type: trans}
@@ -166,7 +166,7 @@ layers:
   - {t: '&ac_ecir_l', s: '&ac_ecir_u'}
   - ''
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - ENTER
@@ -174,47 +174,47 @@ layers:
   - $$mdi:backspace-reverse-outline$$
   function:
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:backup-restore$$', type: bootloader}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
+  - BT CLR ALL
   - {t: '$$mdi:bluetooth-connect$$', h: '0', type: text_with_symbol}
-  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:bluetooth-connect$$', h: '1', type: text_with_symbol}
+  - {t: '$$mdi:bluetooth-connect$$', h: '2', type: text_with_symbol}
+  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$', type: toggle}
+  - SCROLL UP
   - F1
   - F2
   - F3
   - F4
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:progress-download$$', type: bootloader}
+  - {t: '$$mdi:bluetooth$$', h: '$$mdi:close-thick$$', type: text_with_symbol}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {type: held}
   - {type: held}
-  - {t: '$$mdi:bluetooth-connect$$', h: '1', type: text_with_symbol}
   - {t: '$$mdi:chevron-down$$', type: trans}
+  - SCROLL DOWN
   - F5
   - F6
   - F7
   - F8
   - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:backup-restore$$', type: bootloader}
+  - {t: '$$mdi:progress-download$$', type: bootloader}
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:bluetooth$$', h: '$$mdi:close-thick$$', type: text_with_symbol}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:bluetooth-connect$$', h: '2', type: text_with_symbol}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - F9
   - F10
   - F11
   - F12
   - {t: '$$mdi:chevron-down$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {type: held}
   game:
   - $$mdi:keyboard-tab$$
   - {t: '$$mdi:chevron-down$$', type: trans}
@@ -260,27 +260,27 @@ layers:
   - {t: '$$mdi:chevron-down$$', type: trans}
   nav:
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - '{'
+  - Page Up
   - '&'
   - '*'
   - (
   - '}'
+  - VOLUME UP
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - UP ARROW
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - '"'
+  - Page Down
   - $
   - '%'
   - ^
   - +
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - $$mdi:apple-keyboard-shift$$
-  - $$mdi:apple-keyboard-control$$
-  - ALT
+  - VOLUME DOWN
+  - LEFT ARROW
+  - $$mdi:arrow-down$$
+  - $$mdi:arrow-right$$
   - $$mdi:microsoft-windows$$
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
@@ -289,10 +289,10 @@ layers:
   - '@'
   - '#'
   - '|'
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - RALT
+  - MUTE
+  - '&guileft'
+  - '&gui_up'
+  - '&guiright'
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - (
@@ -300,7 +300,7 @@ layers:
   - _
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {type: held}
   fgame:
   - {t: F5, h: '$$mdi:toggle-switch$$'}
   - '1'
@@ -351,3 +351,5 @@ combos:
 - p: [11, 23, 35]
   k: {t: game, h: '$$mdi:toggle-switch$$'}
   l: [base]
+- p: [41, 36]
+  k: function
