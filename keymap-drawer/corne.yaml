@@ -136,11 +136,11 @@ layers:
   - '#'
   - ^
   - ''
-  - ''
-  - {t: '&ac_otil_l', s: '&ac_otil_u'}
-  - {t: '&ac_oacu_l', s: '&ac_oacu_u'}
-  - {t: '&ac_uacu_l', s: '&ac_uacu_u'}
-  - ''
+  - ^
+  - '&U_acute'
+  - '&A_tilde'
+  - '&O_tilde'
+  - ;
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - '`'
@@ -148,11 +148,11 @@ layers:
   - ''''
   - '!'
   - '~'
-  - {t: '&ac_agrv_l', s: '&ac_agrv_u'}
-  - {t: '&ac_atil_l', s: '&ac_atil_u'}
-  - {t: '&ac_aacu_l', s: '&ac_aacu_u'}
-  - {t: '&ac_eacu_l', s: '&ac_eacu_u'}
-  - {t: '&ac_iacu_l', s: '&ac_iacu_u'}
+  - '`'
+  - '&I_acute'
+  - '&A_acute'
+  - '&O_acute'
+  - '&E_acute'
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - ''
@@ -160,11 +160,11 @@ layers:
   - '&ac_ccdi'
   - ''
   - ''
-  - ''
-  - {t: '&ac_acir_l', s: '&ac_acir_u'}
-  - {t: '&ac_ocir_l', s: '&ac_ocir_u'}
-  - {t: '&ac_ecir_l', s: '&ac_ecir_u'}
-  - ''
+  - '&A_grave'
+  - '&E_circ'
+  - '&A_circ'
+  - '&O_circ'
+  - '~'
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {type: held}
   - {t: '$$mdi:chevron-down$$', type: trans}
