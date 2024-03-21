@@ -366,7 +366,6 @@ parse_config:
     SZ: 'ß'
     ACUTE: '´'
     
-    # default
     EXCLAMATION: '!'
     EXCL: '!'
     AT_SIGN: '@'
