@@ -1,14 +1,17 @@
 file_format: "1"
 id: corne
-name: corne
+name: Corne
 type: shield
-url: https://github.com/englmaxy/zmk-config
+url: https://github.com/foostan/crkbd/
 requires: [pro_micro]
 exposes: [i2c_oled]
 features:
   - keys
+  - display
+  - underglow
 siblings:
-  - corne_dongle
-  - corne_left_central
+  - corne_left
+  - corne_right
   - corne_left_peripheral
-  - corne_right_peripheral
+  - corne_dongle_xiao
+  - corne_dongle_pro_micro
