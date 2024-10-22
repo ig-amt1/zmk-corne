@@ -197,7 +197,7 @@ UNDEAD_KEY(grave, BR_GRAVE)
         game_layer {
             bindings = <
 &kp TAB         &trans  &trans  &trans     &trans        &trans    &trans  &trans         &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &trans  &trans  &trans     &trans        &kp F5    &trans  &trans         &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &trans  &trans  &trans     &trans        &kp F5    &trans  &trans        &kp LEFT_SHIFT  &trans  &trans  &trans
 &kp LCTRL       &trans  &trans  &trans     &trans        &trans    &trans  &trans         &trans  &trans  &trans  &to 0
                                 &kp LA(M)  &lt 7 ESCAPE  &trans    &trans  &kp RIGHT_WIN  &trans
             >;
