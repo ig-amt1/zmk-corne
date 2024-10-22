@@ -8,7 +8,7 @@ include:
 
 
 # corne
-  - board: seeeduino_xiao_ble
+  - board: nice_nano
     shield: corne_dongle dongle_display
     artifact-name: corne_dongle
   - board: nice_nano
